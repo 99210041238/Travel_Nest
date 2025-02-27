@@ -1,0 +1,399 @@
+/* Resetting default browser styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth transitions for interactive elements */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e6e9ef;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 3D Button Styles */
+button {
+  background: linear-gradient(145deg, #6cb1f7, #3581d6);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2),
+              -5px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: translateY(-4px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3),
+              -10px -10px 20px rgba(255, 255, 255, 0.6);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2),
+              -4px -4px 10px rgba(255, 255, 255, 0.4);
+}
+
+/* Input Fields with 3D Effect */
+input, select, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 15px;
+  background: #f0f0f0;
+  box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.1),
+              inset -4px -4px 10px rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  transition: box-shadow 0.2s, background-color 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2),
+              -6px -6px 15px rgba(255, 255, 255, 0.5);
+  background-color: #e3e7eb;
+}
+
+/* 3D Effect for Cards */
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.15),
+              -10px -10px 30px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.3),
+              -20px -20px 40px rgba(255, 255, 255, 0.8);
+}
+
+/* Updated Navbar CSS */
+.custom-navbar {
+  background-color: #4CAF50;
+  padding: 15px 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+
+.custom-navbar:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-logo {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-logo:hover {
+  color: #e3e7eb;
+}
+
+.nav-links .nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #e3e7eb;
+}
+
+/* Login Button Styles */
+/* Form Container Styles */
+.form-container {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 20px auto; /* Center the box */
+  width: 90%; /* Responsive width */
+  max-width: 400px; /* Maximum width for larger screens */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* 3D Button Styles */
+.login-button {
+  background: linear-gradient(145deg, #6cb1f7, #3581d6);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2),
+              -5px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.login-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3),
+              -10px -10px 20px rgba(255, 255, 255, 0.6);
+}
+
+.login-button:active {
+  transform: translateY(0);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2),
+              -4px -4px 10px rgba(255, 255, 255, 0.4);
+}
+
+/* Adjusting Input Fields for the Form */
+input, select, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 15px;
+  background: #f0f0f0;
+  box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.1),
+              inset -4px -4px 10px rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  transition: box-shadow 0.2s, background-color 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2),
+              -6px -6px 15px rgba(255, 255, 255, 0.5);
+  background-color: #e3e7eb;
+}
+
+/* Menu Button Styles */
+.navbar-menu-button {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-menu-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown Menu Styles */
+.navbar-dropdown {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+
+/* Responsive Grid for Hotel Listings */
+.hotel-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+/* Adding hover effect for Hotel Cards */
+.hotel-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.2),
+              -8px -8px 25px rgba(255, 255, 255, 0.5);
+  text-align: center;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.hotel-card:hover {
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25),
+              -10px -10px 30px rgba(255, 255, 255, 0.7);
+  transform: scale(1.05);
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #2C3E50;
+  color: #ffffff;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 40px 40px 0 0;
+  transition: all 0.3s ease;
+}
+
+.footer:hover {
+  box-shadow: 0 -12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.footer-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.footer-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+.place-card {
+  transition: transform 0.3s;
+}
+.place-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.room-booking-container {
+  padding: 40px;
+  text-align: center;
+  background-color: #e6e9ef;
+}
+
+.room-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.room-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15),
+              -8px -8px 20px rgba(255, 255, 255, 0.5);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.room-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.room-card h3 {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.room-card p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.room-card label {
+  display: block;
+  margin: 10px 0;
+}
+
+.room-card:hover {
+  transform: scale(1.05);
+  box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.2),
+              -12px -12px 30px rgba(255, 255, 255, 0.7);
+}
+.room-booking-container, .payment-page-container, .upi-payment-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.room-type-buttons button, .payment-options .payment-option {
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #ddd;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.room-type-buttons button.active, .payment-options .payment-option:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payment-option {
+  width: 200px;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.payment-option p {
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.qr-code {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+.payment-summary {
+  margin-top: 20px;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .footer {
+    text-align: left;
+    padding: 20px;
+  }
+  .footer-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+button:active {
+  animation: pop 0.15s ease;
+}

@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Resetting default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth transitions for interactive elements */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e6e9ef;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 3D Button Styles */
+button {
+  background: linear-gradient(145deg, #6cb1f7, #3581d6);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2),
+              -5px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3),
+              -8px -8px 20px rgba(255, 255, 255, 0.6);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2),
+              -4px -4px 10px rgba(255, 255, 255, 0.4);
+}
+
+/* Input Fields with 3D Effect */
+input, select, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 15px;
+  background: #f0f0f0;
+  box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.1),
+              inset -4px -4px 10px rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  transition: box-shadow 0.2s, background-color 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2),
+              -6px -6px 15px rgba(255, 255, 255, 0.5);
+  background-color: #e3e7eb;
+}
+
+/* 3D Effect for Cards */
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.15),
+              -10px -10px 30px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.2),
+              -15px -15px 40px rgba(255, 255, 255, 0.7);
+}
+
+/* Navbar with Shadow and 3D Effect */
+.navbar {
+  background-color: #4CAF50;
+  padding: 15px 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.2s;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #e3e7eb;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #2C3E50;
+  color: #ffffff;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 40px 40px 0 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer .footer-section {
+  margin: 10px;
+  text-align: left;
+}
+
+.footer h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer a {
+  color: #4CAF50;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.footer a:hover {
+  color: #45a049;
+  text-decoration: underline;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer .footer-section {
+    text-align: center;
+  }
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
